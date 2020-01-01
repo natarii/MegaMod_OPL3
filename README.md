@@ -23,3 +23,6 @@ Power off the MegaGRRL Desktop. Remove the YM2612 and SN76489 and seat the addon
 | IC3 | SA5532 (THT) |
 | D1 | 1N5819 |
 | Misc | 0.1" machine pin male-to-male headers, 40 pins total required |
+
+# Assembly
+The side with the SMD components faces up, and the pin headers poke down towards the desktop board. It's important that the pin headers aren't crooked. I recommend breaking them to the appropriate lengths, pushing them into the main desktop board, and using that as an alignment jig. Otherwise, assembly is pretty easy, just solder everything on.
