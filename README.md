@@ -1,10 +1,15 @@
 # OPL3 MegaMod
-This addon board lets you play OPL, OPL2, and OPL3 VGM files using your MegaGRRL Desktop.
+This add-on board lets you play OPL, OPL2, and OPL3 VGM files using your MegaGRRL Desktop.
 
-**DO NOT BUILD YET - DESIGN UNTESTED, SOFTWARE SUPPORT INCOMPLETE**
+**This board is provided as an experimental add-on. Software support is working, but incomplete. Software support may improve in the future.**
+
+**MegaGRRL Desktop Firmware v0.97dev or newer is required!** See [Firmware Releases](https://git.agiri.ninja/natalie/megagrrl/-/releases)
 
 # Usage
-Power off the MegaGRRL Desktop. Remove the YM2612 and SN76489 and seat the addon board into their sockets. Move all 4 DIP switches on the desktop board to the OFF position. The presence of the OPL3 board will be detected upon boot.
+1. Power off the MegaGRRL Desktop.
+2. Remove the YM2612 and SN76489, and seat the addon board into their sockets.
+3. Set all 4 DIP switches on the desktop board to OFF.
+4. Power on. The presence of the OPL3 board will be detected upon boot. Play an OPL/OPL2/OPL3 VGM file.
 
 # Bill of Materials
 | Ref.Dsg. | Value | 
@@ -18,11 +23,18 @@ Power off the MegaGRRL Desktop. Remove the YM2612 and SN76489 and seat the addon
 | C7 | 0.1uF ceramic |
 | R1 | 33 ohm |
 | R2 | 1k ohm |
-| IC1 | YMF262 (SMD) |
+| IC1 | YMF262 aka YMF262-M (SMD) |
 | IC2 | YAC512 (SMD) |
 | IC3 | SA5532 (THT) |
 | D1 | 1N5819 |
-| Misc | 0.1" machine pin male-to-male headers, 40 pins total required |
+| Misc | 0.1" machine pin male-to-male headers, 40 pins total required. Must be machine pin type!!! |
+
+All capacitors, resistors, diode are THT
 
 # Assembly
-The side with the SMD components faces up, and the pin headers poke down towards the desktop board. It's important that the pin headers aren't crooked. I recommend breaking them to the appropriate lengths, pushing them into the main desktop board, and using that as an alignment jig. Otherwise, assembly is pretty easy, just solder everything on.
+1. Solder on the SMD components (YMF262, YAC512)
+2. Solder on the THT components (SA5532, capacitors, resistors, diode)
+3. Solder on the pin headers (use MegaGRRL Desktop IC sockets for alignment)
+
+# Gerber files
+Gerbers for JLCPCB are in the `gerbers/` directory.
