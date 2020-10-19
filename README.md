@@ -27,7 +27,7 @@ This add-on board lets you play OPL, OPL2, and OPL3 VGM files using your MegaGRR
 | R2 | 1k ohm |
 | IC1 | YMF262 aka YMF262-M (SMD) |
 | IC2 | YAC512 (SMD) |
-| IC3 | SA5532 (THT) |
+| IC3 | TL072 (THT) (or SA5532, many opamps will work) |
 | D1 | 1N5819 |
 | Misc | 0.1" machine pin male-to-male headers, 40 pins total required. Must be machine pin type!!! |
 
